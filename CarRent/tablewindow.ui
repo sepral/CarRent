@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TableWindow</class>
+ <widget class="QMainWindow" name="TableWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1247</width>
+    <height>558</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>АИС &quot;Авто в аренду&quot;</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../build-CarRent-Desktop_Qt_5_10_1_MinGW_32bit-Debug/icon.png</normaloff>../build-CarRent-Desktop_Qt_5_10_1_MinGW_32bit-Debug/icon.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTableView" name="tableViewAuto">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>20</y>
+      <width>931</width>
+      <height>401</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 10pt &quot;Segoe UI&quot;;</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>-20</y>
+      <width>931</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>20</y>
+       <width>931</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="currentIndex">
+      <number>11</number>
+     </property>
+     <property name="elideMode">
+      <enum>Qt::ElideLeft</enum>
+     </property>
+     <widget class="QWidget" name="autoTab">
+      <property name="focusPolicy">
+       <enum>Qt::TabFocus</enum>
+      </property>
+      <attribute name="title">
+       <string>Авто</string>
+      </attribute>
+     </widget>
+     <widget class="QWidget" name="clientTab">
+      <attribute name="title">
+       <string>Клиенты</string>
+      </attribute>
+     </widget>
+     <widget class="QWidget" name="rentTab">
+      <attribute name="title">
+       <string>Аренды</string>
+      </attribute>
+     </widget>
+     <widget class="QWidget" name="workerTab">
+      <attribute name="title">
+       <string>Работники</string>
+      </attribute>
+     </widget>
+     <widget class="QWidget" name="insurerTab">
+      <attribute name="title">
+       <string>Страховки</string>
+      </attribute>
+     </widget>
+     <widget class="QWidget" name="regTab">
+      <attribute name="title">
+       <string>Регистрация</string>
+      </attribute>
+     </widget>
+     <widget class="QWidget" name="inspectTab">
+      <attribute name="title">
+       <string>ТО</string>
+      </attribute>
+     </widget>
+     <widget class="QWidget" name="ptsTab">
+      <attribute name="title">
+       <string>ПТС</string>
+      </attribute>
+     </widget>
+     <widget class="QWidget" name="dtpTab">
+      <attribute name="title">
+       <string>ДТП</string>
+      </attribute>
+     </widget>
+     <widget class="QWidget" name="controlTab">
+      <attribute name="title">
+       <string>Сводная таблица</string>
+      </attribute>
+     </widget>
+     <widget class="QWidget" name="brandTab">
+      <attribute name="title">
+       <string>Справочник брендов</string>
+      </attribute>
+     </widget>
+     <widget class="QWidget" name="modelTab">
+      <attribute name="title">
+       <string>Справочник моделей</string>
+      </attribute>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QTableWidget" name="tableViewControl">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>20</y>
+      <width>931</width>
+      <height>401</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="functionBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>440</y>
+      <width>341</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Функции</string>
+    </property>
+    <widget class="QPushButton" name="saveButton">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>81</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Сохранить</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="cancelButton">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>81</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Отменить</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="importButton">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>20</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Импорт</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="exportButton">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>50</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Экспорт</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="addButton">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>20</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Добавить</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="delButton">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>50</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Удалить</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="printButton">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>20</y>
+       <width>71</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Печать</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>1010</x>
+      <y>10</y>
+      <width>231</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Информация о пользователе</string>
+    </property>
+    <widget class="QLabel" name="userLabel">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>221</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="searchBox">
+    <property name="geometry">
+     <rect>
+      <x>1010</x>
+      <y>120</y>
+      <width>231</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Фильтрация</string>
+    </property>
+    <widget class="QLineEdit" name="searchEdit">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>141</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="resetButton">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>30</y>
+       <width>61</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Сброс</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
